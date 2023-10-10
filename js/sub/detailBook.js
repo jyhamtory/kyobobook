@@ -31,7 +31,7 @@ $(function(){
   //index
   function index(){
     $("#detailBook .now").text(i + 1);
-    $("#detailBook .total").text($("#detailBook .bookbox img:last").index() + 1);
+    $("#detailBook .totalIndex").text($("#detailBook .bookbox img:last").index() + 1);
   }
 
   index();

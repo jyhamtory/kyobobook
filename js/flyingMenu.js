@@ -72,4 +72,8 @@ $(function () {
       }
     }
   })
+
+  $("#popupAd .closeBtn").click(function(){
+    $("#popupAd").hide();
+  })
 });

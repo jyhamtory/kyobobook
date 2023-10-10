@@ -1359,12 +1359,15 @@ main{
   width:1200px;
   margin:0 auto;
   position:fixed;
+  bottom:-1px;
+  right:0;
+  left:0;
 }
 
 #popupAd .closeBtn{
   position:absolute;
   width:24px;
   height:24px;
-  right:110px;
+  right:35px;
   top:60px;
 }

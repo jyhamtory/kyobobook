@@ -23,6 +23,6 @@ $(function(){
   function comma(){
     let price = $("#inputNum").val() * 13500;
     let priceComma = price.toLocaleString();
-    $(".total").text(priceComma);
+    $("#purchaseInfo .total").text(priceComma);
   }
 })

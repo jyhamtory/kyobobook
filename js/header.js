@@ -165,6 +165,7 @@ $(function () {
     if(winWidth > 1023){
       if(winScroll > height){
         $("header").addClass("fixed");
+        $("main").css({"padding-top": "278px"});
         $("#topBanner").hide();
         $("#serviceMall").hide();
         $("nav").addClass("changed");
@@ -178,8 +179,9 @@ $(function () {
         $("#searchSelect").addClass("changed");
         $("#searchInputBox").addClass("changed");
         $("#userMenu").addClass("changed");
-      }else{
+      }else if(winScroll <= height){
         $("header").removeClass("fixed");
+        $("main").css({"padding-top": "0px"});
         $("#topBanner").show();
         $("#serviceMall").show();
         $("nav").removeClass("changed");
