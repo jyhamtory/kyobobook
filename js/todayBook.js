@@ -103,11 +103,11 @@ $(function () {
         }
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + result + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + result + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -123,8 +123,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
 
       $("img").on("error", function () {
@@ -156,11 +156,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -176,8 +176,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
 
       $("img").on("error", function () {
@@ -211,11 +211,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -230,8 +230,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
     })
 
@@ -260,11 +260,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='.sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -279,8 +279,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
 
       $("img").on("error", function () {
@@ -312,11 +312,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -331,8 +331,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
 
       $("img").on("error", function () {
@@ -364,11 +364,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -383,8 +383,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
 
       $("img").on("error", function () {
@@ -416,11 +416,11 @@ $(function () {
         let priceString = salePrice.toLocaleString("ko-KR"); // 3자리마다 콤마 찍기 
 
         $(this).find(".imgbox img").attr("src", img)
-          .wrap("<a href='#'></a>");
+          .wrap("<a href='sub.html'></a>");
 
         $(this).find(".textbox")
           .prepend("<p class='mdCommentDesc'>" + authors + "</p>")
-          .prepend("<h3 class='name'>" + "<a href='#'>" + title + "</a>" + "</h3>")
+          .prepend("<h3 class='name'>" + "<a href='sub.html'>" + title + "</a>" + "</h3>")
           .append("<p class='mdComment'>" + comment + "</p>")
           .append("<p class='mdCommentDesc'>" + commentDesc + "</p>");
 
@@ -435,8 +435,8 @@ $(function () {
         let titleSlice = title.substring(0, 25);
 
         $(this)
-          .append("<a href='#'><img src= '" + img + "' /></a>")
-          .append("<p><a href='#'>" + titleSlice + "</a></p>");
+          .append("<a href='sub.html'><img src= '" + img + "' /></a>")
+          .append("<p><a href='sub.html'>" + titleSlice + "</a></p>");
       });
       
       $("img").on("error", function () {

@@ -70,10 +70,10 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
           .append("<div class='pricebox'><span class='price'>" + salePriceComma + "</span><span class='won'>원</span></div>");
 
@@ -105,10 +105,10 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
           .append("<div class='pricebox'><span class='price'>" + salePriceComma + "</span><span class='won'>원</span></div>");
 
@@ -140,10 +140,10 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
           .append("<div class='pricebox'><span class='price'>" + salePriceComma + "</span><span class='won'>원</span></div>");
 
@@ -174,11 +174,11 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
           .append("<span class='ebook'>eBook</span>")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
 
         $("img").on("error", function () {
@@ -208,11 +208,11 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
           .append("<span class='sam'>sam</span>")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
 
         $("img").on("error", function () {
@@ -244,10 +244,10 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "' class='hottracks'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "' class='hottracks'/></a>");
 
         $(this).find(".textbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
           .append("<div class='pricebox'><span class='price'>" + salePriceComma + "</span><span class='won'>원</span></div>");
 
@@ -277,10 +277,10 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "' class='hottracks'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "' class='hottracks'/></a>");
 
         $(this).find(".textbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
 
         $("img").on("error", function () {

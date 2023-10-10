@@ -93,7 +93,7 @@ $(function () {
           .append("<p class='author'>" + author + "</p>");
 
         $(this).find(".castingFloat")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
       })
     })
   })
@@ -110,10 +110,10 @@ $(function () {
 
         $(this)
         .append("<div class='imgbox'></div>")
-        .append("<a href='#'><div class='textbox'></div></a>");
+        .append("<a href='sub.html'><div class='textbox'></div></a>");
 
         $(this).find(".imgbox")
-        .append("<a href='#'><img src='" + thumbnail + "'/></a>");
+        .append("<a href='sub.html'><img src='" + thumbnail + "'/></a>");
         
         $(this).find(".textbox")
         .append("<p class ='text'>" + text + "</p>");

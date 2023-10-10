@@ -48,11 +48,11 @@ $(function () {
         }
 
         $(this).find(".imgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".textbox")
           .append("<span class='publisher'>" + publisher + "</span>")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>");
 
         $("img").on("error", function () {

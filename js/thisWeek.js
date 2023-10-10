@@ -23,10 +23,10 @@ $(function(){
         }
 
         $(this).find(".slideImgbox")
-          .append("<a href='#'><img src='" + img + "'/></a>");
+          .append("<a href='sub.html'><img src='" + img + "'/></a>");
 
         $(this).find(".slideTextbox")
-          .append("<a href='#'><span class='title'>" + result + "</span></a>")
+          .append("<a href='sub.html'><span class='title'>" + result + "</span></a>")
           .append("<span class='author'>" + authors + "</span>")
           .append("<div class='pricebox'><span class='price'>" + salePriceComma + "</span><span class='won'>원</span></div>");
 

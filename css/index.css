@@ -1362,6 +1362,7 @@ main{
   bottom:-1px;
   right:0;
   left:0;
+  cursor:pointer;
 }
 
 #popupAd .closeBtn{
