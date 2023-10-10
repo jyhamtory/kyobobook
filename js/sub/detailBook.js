@@ -30,6 +30,9 @@ $(function(){
   
   //index
   function index(){
+    if(i < 0){
+      i = $("#detailBook .bookbox img:last").index()
+    }
     $("#detailBook .now").text(i + 1);
     $("#detailBook .totalIndex").text($("#detailBook .bookbox img:last").index() + 1);
   }
