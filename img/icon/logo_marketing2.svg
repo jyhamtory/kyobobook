@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+    <g data-name="그룹 1043" transform="translate(-141 -539)">
+        <rect data-name="사각형 3440" width="68" height="68" rx="20" transform="translate(141 539)" style="fill:#f7f7f7"/>
+        <g data-name="icon">
+            <path transform="translate(160 558)" style="fill:none" d="M0 0h30v30H0z"/>
+            <g data-name="그룹 639">
+                <g data-name="그룹 1042">
+                    <path data-name="패스 14732" d="M85.281 30.155 78.04 32.2a1.462 1.462 0 0 0-.685.547 2.506 2.506 0 0 0-.173.2l-7.721 9.738a2.483 2.483 0 0 0 .4 3.489l5.32 4.226a2.483 2.483 0 0 0 3.489-.4l7.721-9.738a2.506 2.506 0 0 0 .152-.213 1.462 1.462 0 0 0 .379-.791l.364-7.515a1.479 1.479 0 0 0-2.005-1.595" transform="translate(101.445 535.309)" style="fill:#f7f7f7"/>
+                    <path data-name="패스 14733" d="M85.281 30.155 78.04 32.2a1.462 1.462 0 0 0-.685.547 2.506 2.506 0 0 0-.173.2l-7.721 9.738a2.483 2.483 0 0 0 .4 3.489l5.32 4.226a2.483 2.483 0 0 0 3.489-.4l7.721-9.738a2.506 2.506 0 0 0 .152-.213 1.462 1.462 0 0 0 .379-.791l.364-7.515a1.479 1.479 0 0 0-2.005-1.588z" transform="translate(101.445 535.309)" style="stroke-miterlimit:10;stroke:#000;stroke-width:1.3px;fill:none"/>
+                    <path data-name="패스 14734" d="m26.657 4.594-9.732-.551a1.894 1.894 0 0 0-1.07.381 3.262 3.262 0 0 0-.3.166L1.99 13.254A3.217 3.217 0 0 0 1 17.7l4.73 7.431a3.217 3.217 0 0 0 4.441.987l13.57-8.664a3.24 3.24 0 0 0 .276-.2 1.894 1.894 0 0 0 .8-.808l3.621-9.05a1.916 1.916 0 0 0-1.782-2.8" transform="translate(159.645 556.331)" style="fill:#f7f7f7"/>
+                    <path data-name="패스 14735" d="m26.657 4.594-9.732-.551a1.894 1.894 0 0 0-1.07.381 3.262 3.262 0 0 0-.3.166L1.99 13.254A3.217 3.217 0 0 0 1 17.7l4.73 7.431a3.217 3.217 0 0 0 4.441.987l13.57-8.664a3.24 3.24 0 0 0 .276-.2 1.894 1.894 0 0 0 .8-.808l3.621-9.05a1.916 1.916 0 0 0-1.781-2.802z" transform="translate(159.645 556.331)" style="stroke-miterlimit:10;stroke:#000;stroke-width:1.3px;fill:none"/>
+                    <path data-name="패스 14737" d="M0 3.151 4.208.258" transform="translate(185.791 559.871)" style="stroke-linecap:round;stroke:#000;stroke-width:1.3px;fill:none"/>
+                </g>
+                <text transform="rotate(-33 1053.918 -9.792)" style="fill:#5055b1;font-size:7px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800;letter-spacing:-.01em"><tspan x="-7.514" y="0">HOT</tspan></text>
+            </g>
+            <path data-name="사각형 3395" transform="translate(160 558)" style="fill:none" d="M0 0h30v30H0z"/>
+        </g>
+    </g>
+</svg>

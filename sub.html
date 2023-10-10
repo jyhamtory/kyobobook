@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/db0e422e76.js" crossorigin="anonymous"></script>
+  <script src="js/sub/subHeader.js"></script>
+  <script src="js/sub/category.js"></script>
+  <script src="js/sub/detailBook.js"></script>
+  <script src="js/sub/bookcard.js"></script>
+  <script src="js/sub/with.js"></script>
+  <script src="js/sub/rank.js"></script>
+  <script src="js/flyingMenu.js"></script>
+  <script src="js/sub/info.js"></script>
+  <script src="js/sub/purchaseInfo.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+
+<body>
+  <header>
+    <!--탑 배너-->
+    <div id="topBanner">
+      <div id="topBannerWrap">
+        <a href="#"><img src="img/top_banner.png" alt="topBanner" class="topBanner"></a>
+        <button class="closeBtn"><img src="img/icon/top_banner_close.png"></button>
+      </div>
+    </div>
+
+    <!--교보문고 관련 몰 및 회원 서비스-->
+    <div id="serviceMall">
+      <div id="serviceMallWrap">
+        <div id="leftMenu">
+          <img src="img/shape1.png" id="imgBarFirst">
+          <ul id="imgBar">
+            <li><img src="img/shape2.png"><span class="ebook">eBook</span></li>
+            <li><img src="img/shape3.png"><span class="sam">sam</span></li>
+            <li><img src="img/shape4.png"><span class="hot">핫트랙스</span></li>
+            <li><img src="img/shape5.png"><span class="info">매장안내</span></li>
+            <li><img src="img/shape6.png"><span class="talk">톡소다</span></li>
+            <li><img src="img/shape7.png"><span class="story">스토리</span></li>
+            <li class="more"><span>브랜드 더보기</span>
+              <div class="sub">
+                <div class="subScroll">
+                  <ul>
+                    <li><img src="img/icon/more1.png"><span>교보문고</span></li>
+                    <li><img src="img/icon/more2.png"><span>eBook</span></li>
+                    <li><img src="img/icon/more3.png"><span>sam</span></li>
+                    <li><img src="img/icon/more4.png"><span>핫트랙스</span></li>
+                    <li><img src="img/icon/more5.png"><span>매장안내</span></li>
+                    <li><img src="img/icon/more6.png"><span class="arrow">톡소다</span></li>
+                    <li><img src="img/icon/more7.png"><span class="arrow">스토리</span></li>
+                    <li><img src="img/icon/more8.png"><span class="arrow">북모닝</span></li>
+                    <li><img src="img/icon/more9.png"><span class="arrow">리딩트리</span></li>
+                    <li><img src="img/icon/more10.png"><span class="arrow">퍼플</span></li>
+                    <li><img src="img/icon/more11.png"><span class="arrow">창작의 날씨</span></li>
+                    <li><img src="img/icon/more12.png"><span class="arrow">꾸밍</span></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="rightMenu">
+          <ul id="service">
+            <li><span>회원가입</span></li>
+            <li><span>로그인</span></li>
+            <li><span class="member more">회원혜택</span>
+              <ul id="serviceSub">
+                <li><span>교보북클럽</span></li>
+                <li><span>등급별 혜택</span></li>
+                <li><span>신규회원 혜택</span></li>
+                <li><span>제휴포인트/상품권</span></li>
+                <li><span>참좋은교보문고</span></li>
+                <li><span>Prestige Lounge</span></li>
+              </ul>
+            </li>
+            <li><span>고객센터</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--서치창 및 장바구니, 마이페이지 변경: sticky로 변경하기-->
+    <div id="headerMid">
+      <!--로고 박스-->
+      <div class="logobox">
+        <a href="#"><img src="img/logo.png"></a>
+      </div>
+      <!--서치바-->
+      <form id="searchBox">
+        <div id="searchSelectBox">
+          <select title="검색유형" id="searchSelect">
+            <option value="total">통합검색</option>
+            <option value="kyobo">교보문고</option>
+            <option value="ebook">eBook</option>
+            <option value="sam">sam</option>
+            <option value="hottracks">핫트랙스</option>
+          </select>
+        </div>
+        <div id="searchInputBox">
+          <input type="text" name="search" id="searchInput">
+          <img src="img/icon/search.png" alt="search" id="searchIcon">
+        </div>
+      </form>
+      <!--유저 메뉴-->
+      <div id="userMenu">
+        <a href="#"><img src="img/icon/cart.png" alt="cart" id="cartIcon"></a>
+        <a href="#"><img src="img/icon/my.png" alt="my" id="myIcon"></a>
+      </div>
+    </div>
+    <!--네비게이션-->
+    <nav>
+      <div id="navAll">
+        <button type="button" id="All" class="hide"><img src="img/icon/nav_open.png"></button>
+      </div>
+      <div id="navSubBox">
+        <ul id="navMenu">
+          <li class="categoryBtn">카테고리 전체보기</li>
+          <li class="serviceBtn">서비스 전체보기</li>
+        </ul>
+        <div class="categoryAll">
+          <div id="navTab">
+            <ul>
+              <li>교보문고</li>
+              <li>eBook</li>
+              <li>sam</li>
+              <li>핫트랙스</li>
+            </ul>
+          </div>
+          <div class="navInnerBox kyoboBox">
+            <div class="navInnerTop">
+              <div class="innerMenu kyoboMenu">
+                <ul>
+                  <li class="kyobo default">국내도서</li>
+                  <li class="default">서양도서</li>
+                  <li class="default">일본도서</li>
+                  <li class="default">교보Only</li>
+                </ul>
+              </div>
+              <div class="koreanAll show">
+                <div class="allBook">
+                  <a href='#' class="title">국내도서 전체</a>
+                  <ul>
+                    <li>소설</li>
+                    <li>시/에세이</li>
+                    <li>인문</li>
+                    <li>가정/육아</li>
+                    <li>요리</li>
+                    <li>건강</li>
+                    <li>취미/실용/스포츠</li>
+                    <li>경제/경영</li>
+                    <li>자기계발</li>
+                    <li>정치/사회</li>
+                    <li>역사/문화</li>
+                  </ul>
+                  <ul>
+                    <li>종교</li>
+                    <li>예술/대중문화</li>
+                    <li>중/고등참고서</li>
+                    <li>기술/공학</li>
+                    <li>외국어</li>
+                    <li>과학</li>
+                    <li>취업/수험서</li>
+                    <li>여행</li>
+                    <li>컴퓨터/IT</li>
+                    <li>잡지</li>
+                    <li>청소년</li>
+                  </ul>
+                  <ul>
+                    <li>초등참고서</li>
+                    <li>유아(0~7세)</li>
+                    <li>어린이(초등)</li>
+                    <li>만화</li>
+                    <li>대학교재</li>
+                    <li>한국소개도서</li>
+                    <li>교보오리지널</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>오늘의 선택</li>
+                    <li>추천</li>
+                    <li>선물하기</li>
+                    <li>분철서비스</li>
+                    <li>특가</li>
+                    <li>정가인하</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="westernAll">
+                <div class="allBook">
+                  <a class="title">서양도서 전체</a>
+                  <ul>
+                    <li>문학</li>
+                    <li>취미/실용/여행</li>
+                    <li>생활/요리/건강</li>
+                    <li>예술/건축</li>
+                    <li>인문/사회</li>
+                    <li>경제/경영</li>
+                    <li>과학/기술</li>
+                    <li>어린이ELT</li>
+                    <li>유아/아동/청소년</li>
+                    <li>한국관련도서</li>
+                    <li>문구/멀티/비도서</li>
+                  </ul>
+                  <ul>
+                    <li>ELT/수험서</li>
+                    <li>프랑스도서</li>
+                    <li>독일도서</li>
+                    <li>스페인도서</li>
+                    <li>기타도서</li>
+                    <li>교재</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>오늘의 선택</li>
+                    <li>수준별 원서읽기</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="japanAll">
+                <div class="allBook">
+                  <a class="title">일본도서 전체</a>
+                  <ul>
+                    <li>잡지</li>
+                    <li>엔터테인먼트</li>
+                    <li>만화/애니</li>
+                    <li>문학</li>
+                    <li>라이트노벨</li>
+                    <li>문고</li>
+                    <li>신서</li>
+                    <li>아동</li>
+                    <li>실용서/예술</li>
+                    <li>인문/사회</li>
+                  </ul>
+                  <ul>
+                    <li>자연/기술과학 </li>
+                    <li>어학/학습</li>
+                    <li>문구/멀티/기타</li>
+                    <li>중국도서</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>오늘의 선택</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="kyoboAll">
+                <div class="allBook">
+                  <a class="title">교보Only 전체</a>
+                  <ul>
+                    <li>강연</li>
+                    <li>여행</li>
+                    <li>교보문고 굿즈</li>
+                    <li>시그니처 향</li>
+                    <li>교보 기프트카드</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>책 그리고 꽃</li>
+                    <li>문화공간</li>
+                    <li>교보 기프트카드</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navInnerBottom">
+              <ul class="iconList">
+                <li><img src="img/icon/kyobo_tap1.jpg">
+                  <p>오늘의 선택</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap2.jpg">
+                  <p>책 그리고 꽃</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap3.jpg">
+                  <p>인물&작품</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap4.jpg">
+                  <p>선물하기</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap5.jpg">
+                  <p>통합리뷰</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap6.jpg">
+                  <p>손글씨캠페인</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap7.jpg">
+                  <p>문화공간</p>
+                </li>
+                <li><img src="img/icon/kyobo_tap8.jpg">
+                  <p>주문형출판</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navInnerBox ebookBox">
+            <div class="navInnerTop">
+              <div class="innerMenu ebookMenu">
+                <ul>
+                  <li class="ebooksam default">eBook</li>
+                  <li class="default">오디오(북)</li>
+                  <li class="default">동영상</li>
+                </ul>
+              </div>
+              <div class="innerBoxWrap eBookAll show">
+                <div class="innerBox">
+                  <span class="title">일반</span>
+                  <div>
+                    <ul class="allbook">
+                      <li>경제경영</li>
+                      <li>자기계발</li>
+                      <li>시/에세이</li>
+                      <li>인문</li>
+                      <li>종교</li>
+                      <li>소설</li>
+                      <li>국어/외국어</li>
+                      <li>정치/사회</li>
+                      <li>역사/문화</li>
+                      <li>과학/공학</li>
+                    </ul>
+                    <ul>
+                      <li>IT/프로그래밍</li>
+                      <li>건강/의학</li>
+                      <li>가정/생활/요리</li>
+                      <li>여행/취미</li>
+                      <li>예술/대중문화</li>
+                      <li>유아</li>
+                      <li>아동</li>
+                      <li>청소년</li>
+                      <li>교재/수험서</li>
+                      <li>외국도서</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <span class="title">판타지</span>
+                  <ul>
+                    <li>현대판타지</li>
+                    <li>퓨전판타지</li>
+                    <li>정통판타지</li>
+                    <li>게임/레이드</li>
+                    <li>전쟁/대체역사</li>
+                    <li>스포츠</li>
+                    <li>정통무협</li>
+                    <li>신무협</li>
+                  </ul>
+                  <span class="title">라이트노벨</span>
+                  <ul>
+                    <li>해외라이트노벨</li>
+                    <li>국내라이트노벨</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">로맨스</span>
+                  <ul>
+                    <li>현대로맨스</li>
+                    <li>동서양시대물</li>
+                    <li>TL/라이트노벨</li>
+                    <li>할리퀸</li>
+                  </ul>
+                  <span class="title">BL</span>
+                  <ul>
+                    <li>현대BL</li>
+                    <li>판타지BL</li>
+                    <li>시대물BL</li>
+                    <li>해외BL</li>
+                  </ul>
+                  <span class="title">로맨스판타지</span>
+                  <ul>
+                    <li>동양판타지</li>
+                    <li>서양판타지</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">웹툰</span>
+                  <ul>
+                    <li>로맨스판타지</li>
+                    <li>로맨스</li>
+                    <li>드라마</li>
+                    <li>판타지</li>
+                    <li>액션/무협</li>
+                    <li>BL</li>
+                    <li>GL</li>
+                    <li>섹슈얼로맨스</li>
+                  </ul>
+                  <span class="title">만화</span>
+                  <ul>
+                    <li>드라마</li>
+                    <li>순정만화</li>
+                    <li>할리퀸</li>
+                    <li>BL만화</li>
+                    <li>학원물</li>
+                    <li>스포츠</li>
+                    <li>액션/무협</li>
+                    <li>SF/판타지</li>
+                    <li>명랑/코믹</li>
+                    <li>탐정/추리</li>
+                    <li>공포/스릴러</li>
+                    <li>요리</li>
+                    <li>아동</li>
+                    <li>교양/역사</li>
+                    <li>그래픽노블</li>
+                    <li>섹슈얼로맨스</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>선물하기</li>
+                    <li>교보e캐시</li>
+                    <li>eBook 집중탐구</li>
+                    <li>혜택 라운지</li>
+                    <li>이벤트 캘린더</li>
+                    <li>신간 캘린더</li>
+                    <li>교보 오리지널</li>
+                    <li>신간</li>
+                    <li>RTS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="innerBoxWrap audioAll">
+                <div class="innerBox">
+                  <span class="title">일반</span>
+                  <div>
+                    <ul>
+                      <li>인문</li>
+                      <li>종교</li>
+                      <li>국어/외국어</li>
+                      <li>정치/사회</li>
+                      <li>역사/문화</li>
+                      <li>과학/공학</li>
+                      <li>건강/의학</li>
+                    </ul>
+                    <ul>
+                      <li>가정/생활/요리</li>
+                      <li>여행/취미</li>
+                      <li>예술/대중문화</li>
+                      <li>유아</li>
+                      <li>아동</li>
+                      <li>청소년</li>
+                      <li>로맨스</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <span class="title">경제/경영</span>
+                  <ul>
+                    <li>경제일반</li>
+                    <li>제테크/금융</li>
+                    <li>경영일반</li>
+                    <li>마케팅/세일즈</li>
+                    <li>창업</li>
+                    <li>기타</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">시/에세이</span>
+                  <ul>
+                    <li>시</li>
+                    <li>에세이</li>
+                  </ul>
+                  <span class="title">소설</span>
+                  <ul>
+                    <li>소설</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">자기계발</span>
+                  <ul>
+                    <li>인간관계</li>
+                    <li>성공/처세</li>
+                    <li>자기능력계발</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>선물하기</li>
+                    <li>교보e캐시</li>
+                    <li>eBook 집중탐구</li>
+                    <li>혜택 라운지</li>
+                    <li>이벤트 캘린더</li>
+                    <li>신간 캘린더</li>
+                    <li>교보 오리지널</li>
+                    <li>신간</li>
+                    <li>RTS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="innerBoxWrap videoAll">
+                <div class="innerBox">
+                  <span class="title">학습/자기계발</span>
+                  <div>
+                    <ul>
+                      <li>직무교육</li>
+                      <li>어학</li>
+                      <li>자격증</li>
+                    </ul>
+                    <ul>
+                      <li>초중고</li>
+                      <li>기타</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <ul>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">재테크</span>
+                  <ul>
+                    <li>기타</li>
+                    <li>부동산</li>
+                    <li>주식</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>선물하기</li>
+                    <li>교보e캐시</li>
+                    <li>eBook 집중탐구</li>
+                    <li>혜택 라운지</li>
+                    <li>이벤트 캘린더</li>
+                    <li>신간 캘린더</li>
+                    <li>교보 오리지널</li>
+                    <li>신간</li>
+                    <li>RTS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navInnerBottom">
+              <ul class="iconList">
+                <li><img src="img/icon/ebook_tap1.png">
+                  <p>전자도서관</p>
+                </li>
+                <li><img src="img/icon/tap3.png">
+                  <p>sam무제한</p>
+                </li>
+                <li><img src="img/icon/ebook_tap3.png">
+                  <p>교보e캐시</p>
+                </li>
+                <li><img src="img/icon/ebook_tap4.png">
+                  <p>대여eBook</p>
+                </li>
+                <li><img src="img/icon/tap4.png">
+                  <p>학술논문</p>
+                </li>
+                <li><img src="img/icon/ebook_tap6.png">
+                  <p>북드림</p>
+                </li>
+                <li class="ebookBanner"><img src="img/icon/ebook_banner.jpg"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navInnerBox samBox">
+            <div class="navInnerTop">
+              <div class="innerMenu samMenu">
+                <ul>
+                  <li class="ebooksam default">eBook</li>
+                  <li class="default">오디오(북)</li>
+                  <li class="default">동영상</li>
+                  <li class="default">학술논문</li>
+                </ul>
+              </div>
+              <div class="innerBoxWrap eBookAll show">
+                <div class="innerBox">
+                  <span class="title">일반</span>
+                  <div>
+                    <ul class="allbook">
+                      <li>경제경영</li>
+                      <li>자기계발</li>
+                      <li>시/에세이</li>
+                      <li>인문</li>
+                      <li>종교</li>
+                      <li>소설</li>
+                      <li>국어/외국어</li>
+                      <li>정치/사회</li>
+                      <li>역사/문화</li>
+                      <li>과학/공학</li>
+                      <li>IT/프로그래밍</li>
+                    </ul>
+                    <ul>
+                      <li>건강/의학</li>
+                      <li>가정/생활/요리</li>
+                      <li>여행/취미</li>
+                      <li>예술/대중문화</li>
+                      <li>유아</li>
+                      <li>아동</li>
+                      <li>청소년</li>
+                      <li>교재/수험서</li>
+                      <li>외국도서</li>
+                      <li>매거진</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <span class="title">판타지</span>
+                  <ul>
+                    <li>정통판타지</li>
+                    <li>현대판타지</li>
+                    <li>퓨전판타지</li>
+                    <li>게임/레이드</li>
+                    <li>전쟁/대체역사</li>
+                    <li>스포츠</li>
+                    <li>정통무협</li>
+                    <li>신무협</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">로맨스</span>
+                  <ul>
+                    <li>현대로맨스</li>
+                    <li>TL/라이트노벨</li>
+                    <li>할리퀸</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="innerBoxWrap audioAll">
+                <div class="innerBox">
+                  <span class="title">일반</span>
+                  <div>
+                    <ul>
+                      <li>인문</li>
+                      <li>종교</li>
+                      <li>국어/외국어</li>
+                      <li>정치/사회</li>
+                      <li>과학/공학</li>
+                      <li>건강/의학</li>
+                      <li>가정/생활/요리</li>
+                    </ul>
+                    <ul>
+                      <li>여행/취미</li>
+                      <li>예술/대중문화</li>
+                      <li>유아</li>
+                      <li>아동</li>
+                      <li>청소년</li>
+                      <li>교재/수험서</li>
+                      <li>스릴러</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <span class="title">시/에세이</span>
+                  <ul>
+                    <li>시</li>
+                    <li>에세이</li>
+                  </ul>
+                  <span class="title">소설</span>
+                  <ul>
+                    <li>소설</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">자기계발</span>
+                  <ul>
+                    <li>자기계발</li>
+                  </ul>
+                  <span class="title">경제/경영</span>
+                  <ul>
+                    <li>경제일반</li>
+                    <li>제테크/금융</li>
+                    <li>경영일반</li>
+                    <li>마케팅/세일즈</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>선물하기</li>
+                    <li>교보e캐시</li>
+                    <li>eBook 집중탐구</li>
+                    <li>혜택 라운지</li>
+                    <li>이벤트 캘린더</li>
+                    <li>신간 캘린더</li>
+                    <li>교보 오리지널</li>
+                    <li>신간</li>
+                    <li>RTS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="innerBoxWrap videoAll">
+                <div class="innerBox">
+                  <span class="title">학습/자기계발</span>
+                  <div>
+                    <ul>
+                      <li>직무교육</li>
+                      <li>어학</li>
+                      <li>자격증</li>
+                    </ul>
+                    <ul>
+                      <li>초중고</li>
+                      <li>기타</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <ul>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">재테크</span>
+                  <ul>
+                    <li>기타</li>
+                    <li>부동산</li>
+                    <li>주식</li>
+                  </ul>
+                </div>
+                <div class="special">
+                  <span class="title">스페셜 코너</span>
+                  <ul>
+                    <li>선물하기</li>
+                    <li>교보e캐시</li>
+                    <li>eBook 집중탐구</li>
+                    <li>혜택 라운지</li>
+                    <li>이벤트 캘린더</li>
+                    <li>신간 캘린더</li>
+                    <li>교보 오리지널</li>
+                    <li>신간</li>
+                    <li>RTS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="innerBoxWrap paperAll">
+                <div class="innerBox">
+                  <span class="title">사회과학</span>
+                  <div>
+                    <ul>
+                      <li>사회과학일반</li>
+                      <li>정치외교학</li>
+                      <li>사회학</li>
+                      <li>사회복지학</li>
+                      <li>지역학</li>
+                      <li>교육학</li>
+                      <li>심리학</li>
+                      <li>행정학</li>
+                    </ul>
+                    <ul>
+                      <li>정책학</li>
+                      <li>지리학</li>
+                      <li>지역개발</li>
+                      <li>관광학</li>
+                      <li>신문방송학</li>
+                      <li>여성학</li>
+                      <li>무역학</li>
+                      <li>개인저작물</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <span class="title">예술체육</span>
+                  <ul>
+                    <li>예술일반</li>
+                    <li>음악학</li>
+                    <li>미술</li>
+                    <li>의상</li>
+                    <li>체육</li>
+                    <li>무용</li>
+                    <li>개인저작물</li>
+                  </ul>
+                  <span class="title">인문학</span>
+                  <ul>
+                    <li>역사학</li>
+                    <li>철학</li>
+                    <li>종교학</li>
+                    <li>기독교신학</li>
+                    <li>유교학</li>
+                    <li>불교학</li>
+                    <li>문학</li>
+                    <li>언어학</li>
+                    <li>기타인문학</li>
+                    <li>개인저작물</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">경제경영</span>
+                  <ul>
+                    <li>경제학</li>
+                    <li>경영학</li>
+                    <li>회계학</li>
+                    <li>무역학</li>
+                    <li>개인저작물</li>
+                  </ul>
+                  <span class="title">복합학</span>
+                  <ul>
+                    <li>과학기술학</li>
+                    <li>기술정책</li>
+                    <li>문헌정보학</li>
+                    <li>여성학</li>
+                    <li>인지과학</li>
+                    <li>뇌과학</li>
+                    <li>감성과학</li>
+                    <li>학제간연구</li>
+                  </ul>
+                  <span class="title">법학</span>
+                  <ul>
+                    <li>법학</li>
+                    <li>민법</li>
+                    <li>개인저작물</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">공학</span>
+                  <ul>
+                    <li>공학일반</li>
+                    <li>기계공학</li>
+                    <li>자동차공학</li>
+                    <li>화학공학</li>
+                    <li>제어계측공학</li>
+                    <li>환경공학</li>
+                    <li>전자/정보통신공학</li>
+                    <li>컴퓨터학</li>
+                    <li>토목공학</li>
+                    <li>건축공학</li>
+                    <li>산업공학</li>
+                    <li>해양공학</li>
+                    <li>기타공학</li>
+                    <li>개인저작물</li>
+                  </ul>
+                  <span class="title">농수해양</span>
+                  <ul>
+                    <li>수산학</li>
+                    <li>식품과학</li>
+                    <li>해양학</li>
+                    <li>기타농수해양</li>
+                    <li>개인저작물</li>
+                  </ul>
+                </div>
+                <div class="innerBox">
+                  <span class="title">자연과학</span>
+                  <ul>
+                    <li>자연과학일반</li>
+                    <li>물리학</li>
+                    <li>화학</li>
+                    <li>생물학</li>
+                    <li>지질학</li>
+                    <li>생활/식품과학</li>
+                    <li>통계학</li>
+                    <li>개인저작물</li>
+                  </ul>
+                  <span class="title">의약학</span>
+                  <ul>
+                    <li>의학일반</li>
+                    <li>면역학</li>
+                    <li>내과학</li>
+                    <li>일반외과학</li>
+                    <li>소아과학</li>
+                    <li>정신과학</li>
+                    <li>정형외과학</li>
+                    <li>방사선과학</li>
+                    <li>재활의학</li>
+                    <li>간호학</li>
+                    <li>한의학</li>
+                    <li>종양학</li>
+                    <li>기타의약학</li>
+                    <li>개인저작물</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navInnerBottom">
+              <ul class="iconList">
+                <li><img src="img/icon/tap1.png">
+                  <p>회원혜택</p>
+                </li>
+                <li><img src="img/icon/tap2.png">
+                  <p>샘통북통</p>
+                </li>
+                <li><img src="img/icon/tap3.png">
+                  <p>무제한</p>
+                </li>
+                <li><img src="img/icon/tap4.png">
+                  <p>학술논문</p>
+                </li>
+                <li><img src="img/icon/tap5.png">
+                  <p>열람권선물</p>
+                </li>
+                <li><img src="img/icon/tap6.png">
+                  <p>프리미엄</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navInnerBox hotBox">
+            <div class="navInnerTop">
+              <div class="innerMenu hotMenu">
+                <ul>
+                  <li class="default hot">디자인문구</li>
+                  <li class="default">독서용품</li>
+                  <li class="default">필기구</li>
+                  <li class="default">오피스</li>
+                  <li class="default">디지털/자동차</li>
+                  <li class="default">리빙/생활가전</li>
+                  <li class="default">키친</li>
+                  <li class="default">푸드</li>
+                  <li class="default">가구/수납</li>
+                  <li class="default">패션/잡화</li>
+                  <li class="default">뷰티/헬스</li>
+                  <li class="default">여행/취미</li>
+                  <li class="default">유아동</li>
+                  <li class="default">아트/컬쳐</li>
+                  <li class="default">음반/영상</li>
+                </ul>
+              </div>
+              <div class="hotCategory show">
+                <span class="title">디자인문구</span>
+                <div>
+                  <ul>
+                    <li>스터디/기능별 플래너</li>
+                    <li>필통/파우치</li>
+                    <li>노트/메모</li>
+                    <li>스티커/스티커팩/스탬프</li>
+                    <li>데코/디자인 테이프</li>
+                    <li>앨범/바인더/콜렉트북</li>
+                    <li>화방용품</li>
+                    <li>문구세트</li>
+                    <li>편지/카드/엽서/봉투</li>
+                    <li>비즈니스 다이어리/플래너</li>
+                    <li>2024 다이어리/플래너</li>
+                    <li>2024 캘린더</li>
+                    <li>포장/데코용품</li>
+                    <li>BOOK</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navInnerBottom">
+              <ul class="iconList ht">
+                <li><img src="img/icon/ht_tap1.svg">
+                  <p>핫트랙스</p>
+                </li>
+                <li><img src="img/icon/ht_tap2.svg">
+                  <p>쿠폰혜택</p>
+                </li>
+                <li><img src="img/icon/ht_tap3.svg">
+                  <p>당첨자발표</p>
+                </li>
+                <li><img src="img/icon/ht_tap4.png">
+                  <p>CD/LP</p>
+                </li>
+                <li><img src="img/icon/ht_tap5.png">
+                  <p>DVD</p>
+                </li>
+                <li><img src="img/icon/ht_tap6.svg">
+                  <p>커버웰</p>
+                </li>
+                <li><img src="img/icon/ht_tap7.svg">
+                  <p>이전 주문 조회</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="serviceAll">
+          <div class="serviceAllWrap">
+            <div class="serviceScroll">
+              <div class="innerBox">
+                <span class="title">주요서비스</span>
+                <ul>
+                  <li>종합 베스트셀러</li>
+                  <li>스테디셀러</li>
+                  <li>신상품</li>
+                  <li>사은품</li>
+                  <li>특가</li>
+                  <li>정가인하</li>
+                  <li>인물&작품</li>
+                  <li>선물하기</li>
+                  <li>추천</li>
+                </ul>
+                <span class="title">웹소설 톡소다</span>
+                <ul>
+                  <li>웹소설</li>
+                  <li>웹툰</li>
+                  <li>자유연재</li>
+                  <li>베스트</li>
+                </ul>
+                <span class="title">회원혜택 </span>
+                <ul>
+                  <li>교보북클럽</li>
+                  <li>등급별 혜택</li>
+                  <li>신규회원혜택</li>
+                  <li>Prestige Lounge</li>
+                  <li>제휴포인트상품권</li>
+                  <li>참좋은교보문고</li>
+                </ul>
+                <span class="title">협력사여러분</span>
+                <ul>
+                  <li>협력사여러분</li>
+                  <li>제휴/제안</li>
+                  <li>애드북</li>
+                  <li>협력사네트워크</li>
+                  <li>CP관리시스템</li>
+                </ul>
+              </div>
+              <div class="innerBox">
+                <span class="title">이벤트 / 혜택 </span>
+                <ul>
+                  <li>출석체크</li>
+                  <li>이벤트당첨자</li>
+                  <li>이벤트</li>
+                </ul>
+                <span class="title">핫트랙스</span>
+                <ul>
+                  <li>오늘만특가</li>
+                  <li>베스트</li>
+                  <li>핫딜특가</li>
+                  <li>쿠폰/혜택</li>
+                </ul>
+                <span class="title">고객센터</span>
+                <ul>
+                  <li>자주묻는질문</li>
+                  <li>1:1문의</li>
+                  <li>공지사항</li>
+                  <li>전화상담 안내도</li>
+                  <li>법인회원 대량주문</li>
+                </ul>
+                <span class="title">기타</span>
+                <ul>
+                  <li>이용약관</li>
+                  <li>개인정보처리방침</li>
+                  <li>청소년보호정책</li>
+                </ul>
+              </div>
+              <div class="innerBox">
+                <span class="title">ONLY서비스</span>
+                <ul>
+                  <li>책 그리고 꽃</li>
+                  <li>오늘의 선택</li>
+                  <li>이달의 책</li>
+                  <li>POD</li>
+                  <li>스펙비교</li>
+                  <li>우리가만드는책</li>
+                  <li>기프트카드</li>
+                  <li>분철서비스</li>
+                  <li>바로찾는바로드림</li>
+                  <li>수준별원서읽기</li>
+                </ul>
+                <span class="title">중고장터</span>
+                <ul>
+                  <li>중고도서</li>
+                  <li>중고음반</li>
+                  <li>중고블루레이·DVD</li>
+                  <li>최저가 중고도서</li>
+                </ul>
+                <span class="title">마이</span>
+                <ul>
+                  <li>주문내역</li>
+                  <li>선물내역</li>
+                  <li>활동내역</li>
+                  <li>영수증조회/출력</li>
+                  <li>영수증 후 적립</li>
+                  <li>회원정보</li>
+                  <li>알림센터</li>
+                  <li>나의혜택/포인트</li>
+                </ul>
+              </div>
+              <div class="innerBox">
+                <span class="title">캠페인</span>
+                <ul>
+                  <li>손글씨문화확산</li>
+                  <li>손글씨대회</li>
+                  <li>일상속손글씨</li>
+                  <li>손글씨폰트</li>
+                  <li>손글씨이벤트</li>
+                </ul>
+                <span class="title">CASTing</span>
+                <ul>
+                  <li>홈</li>
+                  <li>라이브</li>
+                  <li>영상</li>
+                  <li>포스트</li>
+                  <li>이벤트</li>
+                </ul>
+                <span class="title">라이브러리</span>
+                <ul>
+                  <li>리스트</li>
+                  <li>코멘트</li>
+                  <li>클로버리뷰</li>
+                  <li>문장수집</li>
+                </ul>
+              </div>
+              <div class="innerBox">
+                <span class="title">문화공간</span>
+                <ul>
+                  <li>강연/공연</li>
+                  <li>여행/체험</li>
+                  <li>전시</li>
+                  <li>이벤트/소식</li>
+                </ul>
+                <span class="title">북모닝</span>
+                <ul>
+                  <li>이달의 북모닝도서</li>
+                  <li>이 주의 북브리핑</li>
+                  <li>이벤트</li>
+                  <li>회원가입</li>
+                </ul>
+                <span class="title">매장안내</span>
+              </div>
+              <div class="innerBox">
+                <span class="title">eBook/sam</span>
+                <ul>
+                  <li>오디오북</li>
+                  <li>대여</li>
+                  <li>신간</li>
+                  <li>교보오리지널</li>
+                  <li>sam무제한</li>
+                  <li>sam프리미엄</li>
+                  <li>sam그리고책</li>
+                  <li>학술논문</li>
+                </ul>
+                <span class="title">스토리 </span>
+                <ul>
+                  <li>포트폴리오</li>
+                  <li>스토리공모전</li>
+                  <li>테마공모전</li>
+                  <li>스토리마켓</li>
+                </ul>
+                <span class="title">회사소개</span>
+                <ul>
+                  <li>교보문고 소개</li>
+                  <li>사업현황</li>
+                  <li>사회공헌</li>
+                  <li>채용정보</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <ul id="navList">
+        <li><span class="new">개강부적</span></li>
+        <li><span class="new">커피차출동</span></li>
+        <li><span>베스트</span></li>
+        <li><span>신상품</span></li>
+        <li><span>이벤트</span></li>
+        <li><span>사은품</span></li>
+        <li><span>PICKS</span></li>
+        <li><span>CASTing</span></li>
+        <li><span>교보ONLY</span></li>
+      </ul>
+      <ul id="navSubList">
+        <li><span>할인혜택</span></li>
+        <li><span>출석체크</span>
+          <ul id="navSubPlus">
+            <li><span>바로찾는바로드림</span></li>
+            <li><span>오늘의 선택</span></li>
+            <li><span>책 그리고 꽃</span></li>
+            <li><span>이달의 책</span></li>
+            <li><span>기프트카드</span></li>
+            <li><span>문화공간</span></li>
+            <li><span>통합리뷰</span></li>
+            <li><span>수준별원서읽기</span></li>
+            <li><span>POD</span></li>
+          </ul>
+        </li>
+        <li id="plusBtn"><img src="img/icon/nav_more.png"></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--카테고리-->
+    <div id="category">
+      <div id="categoryWrap">
+        <ul id="categoryList">
+          <li>
+            <a href="#"><img src="img/icon/home.png"></a>
+          </li>
+          <li class="list">
+            <p>국내도서</p>
+            <div class="categoryBox">
+              <ul class="firstCategory">
+                <li class="this">국내도서</li>
+                <li>서양도서</li>
+                <li>일본도서</li>
+                <li>교보Only</li>
+              </ul>
+            </div>
+          </li>
+          <li class="list">
+            <p>시/에세이</p>
+            <div class="categoryBox large">
+              <ul class="secondCategory">
+                <li>소설</li>
+                <li class="this">시/에세이</li>
+                <li>인문</li>
+                <li>가정/육아</li>
+                <li>요리</li>
+                <li>건강</li>
+                <li>취미/실용/스포츠</li>
+                <li>경제/경영</li>
+                <li>자기계발</li>
+                <li>정치/사회</li>
+              </ul>
+              <ul>
+                <li>역사/문화</li>
+                <li>종교</li>
+                <li>예술/대중문화</li>
+                <li>중/고등참고서</li>
+                <li>기술/공학</li>
+                <li>외국어</li>
+                <li>과학</li>
+                <li>취업/수험서</li>
+                <li>여행</li>
+                <li>컴퓨터/IT</li>
+              </ul>
+              <ul>
+                <li>잡지</li>
+                <li>청소년</li>
+                <li>초등참고서</li>
+                <li>유아(0~7세)</li>
+                <li>어린이(초등)</li>
+                <li>만화</li>
+                <li>대학교재</li>
+                <li>한국소개도서</li>
+                <li>교보오리지널</li>
+              </ul>
+            </div>
+          </li>
+          <li class="list">
+            <p>나라별 에세이</p>
+            <div class="categoryBox">
+              <ul class="thirdCategory">
+                <li>한국시</li>
+                <li>해외시</li>
+                <li>테마 에세이</li>
+                <li class="this">나라별 에세이</li>
+                <li>인물/자전적 에세이</li>
+                <li>청소년 시/에세이</li>
+                <li>시/에세이 문고</li>
+              </ul>
+            </div>
+          </li>
+          <li class="list">
+            <p>한국에세이</p>
+            <div class="categoryBox">
+              <ul>
+                <li class="this">한국에세이</li>
+                <li>영미에세이</li>
+                <li>일본에세이</li>
+                <li>중국에세이</li>
+                <li>독일에세이</li>
+                <li>프랑스에세이</li>
+                <li>기타국가에세이</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--책 이미지 & 가격-->
+    <div id="detailBook">
+      <div class="leftContents">
+        <div class="textbox">
+          <h3 class="title">작은 별이지만 빛나고 있어</h3>
+          <p class="author">소윤 에세이</p>
+        </div>
+        <div class="bookbox">
+          <img src="img/book.jpg">
+          <img src="img/book_back.jpg">
+          <img src="img/book_detail.jpg">
+          <img src="img/book_detail0.jpg">
+          <img src="img/book_detail1.jpg">
+          <img src="img/book_detail2.jpg">
+          <img src="img/book_detail3.jpg">
+          <img src="img/book_detail4.jpg">
+          <img src="img/book_detail5.jpg">
+          <img src="img/book_detail6.jpg">
+          <img src="img/book_detail7.jpg">
+          <img src="img/book_detail8.jpg">
+          <img src="img/book_detail9.jpg">
+        </div>
+        <div class="indexbox">
+          <button class="leftBtn"></button>
+          <div class="index">
+            <span class="now">01</span>
+            <span> - </span>
+            <span class="total">02</span>
+          </div>
+          <button class="rightBtn"></button>
+        </div>
+        <div class="btnbox">
+          <button><img src="img/icon/book.png">미리보기</button>
+          <button><img src="img/icon/search_b.png">eBook 미리보기</button>
+        </div>
+      </div>
+      <div class="rightContents">
+        <div class="priceWrap">
+          <div class="badgebox">
+            <span class="badge purple">2021년 10월 01일 오늘의 선택</span>
+            <span class="badge purple">MD의 선택</span>
+            <span class="badge gray">이벤트</span>
+            <span class="badge gray">소득공제</span>
+          </div>
+          <div class="pricebox">
+            <span class="persent">10%</span>
+            <span class="salePrice">13,500<span class="won">원</span></span>
+
+            <span class="price">15,000원</span>
+          </div>
+          <div class="pointbox">
+            <span class="title">적립/혜택</span>
+            <span class="point">750P</span>
+          </div>
+          <div class="deliverybox">
+            <span class="title">배송안내</span>
+            <div class="right">
+              <span class="free">도서 포함 15,000원 이상 무료배송</span>
+              <p><span class=today>당일배송</span>오늘(10/4 ,수) 도착예정</p>
+              <p class="address">서울시 종로구 종로 1<button><span>변경</span></button></p>
+            </div>
+          </div>
+          <div class="alarmbox">
+            <div>
+              <p class="alarm">알림 신청하시면 원하시는 정보를<br>받아 보실 수 있습니다.</p>
+              <button class="purple"><span>알림신청</span></button>
+            </div>
+            <button class="gray"><span>매장 별 재고 및 도서위치</span></button>
+          </div>
+          <div class="infobox">
+            <p class="author">소윤 저자(글)</p>
+            <p class="publishDate"><a href="#">북로망스</a> · 2021년 09월 29일<span>(1쇄 2021년 03월 24일)</span></p>
+            <span class="best">주간베스트</span>
+            <span class="rank">국내도서 <span class="bold">267</span>위 · 시/에세이<span class="bold">23위</span></span>
+            <div class="reviewbox">
+              <div class="kloverbox">
+                <div class="score">
+                  <span>9.6</span>
+                </div>
+                <div class="scorebox">
+                  <div class="kloverbase">
+                    <img src="img/icon/review_score_none.png">
+                    <img src="img/icon/review_score_none.png">
+                    <img src="img/icon/review_score_none.png">
+                    <img src="img/icon/review_score_none.png">
+                  </div>
+                  <div class="kloverfill">
+                    <img src="img/icon/review_score.png">
+                    <img src="img/icon/review_score.png">
+                    <img src="img/icon/review_score.png">
+                    <img src="img/icon/review_score.png">
+                  </div>
+                </div>
+                <div class="count">
+                  <span>(<span class=bold>479</span>개의 리뷰)</span>
+                </div>
+              </div>
+              <div class="quotesbox">
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                </div>
+                <div class="message">
+                  <span>고마워요</span>
+                </div>
+                <div class="count">
+                  <span>(<span class=bold>51%</span>의 구매자)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--서브 페이지 탭-->
+    <div id="innerTab">
+      <div class="tab">
+        <ul>
+          <li>이벤트</li>
+          <li>상품정보</li>
+          <li>리뷰 (479)</li>
+        </ul>
+      </div>
+    </div>
+    <!--컨텐츠-->
+    <div id="sectionWrap">
+      <section class="leftContents">
+        <!--북카드-->
+        <section id="bookcard">
+          <h3 class="title">북카드</h3>
+          <div id="bookcardSlide">
+            <div class="slideWrap">
+              <ul class="slideimg">
+                <li><img src="img/bookcard1.png"></li>
+                <li><img src="img/bookcard2.png"></li>
+                <li><img src="img/bookcard3.png"></li>
+                <li><img src="img/bookcard4.png"></li>
+                <li><img src="img/bookcard5.png"></li>
+                <li><img src="img/bookcard6.png"></li>
+                <li><img src="img/bookcard7.png"></li>
+                <li><img src="img/bookcard8.png"></li>
+                <li><img src="img/bookcard9.png"></li>
+              </ul>
+            </div>
+            <button class="leftBtn"><img src="img/icon/right_button_thin_w.png"></button>
+            <button class="rightBtn"><img src="img/icon/right_button_thin_w.png"></button>
+          </div>
+        </section>
+        <!--함께 구매한 책-->
+        <section id="with">
+          <h3 class="title">함께 구매한 책</h3>
+          <div id="withSlide">
+            <div class="scrollbar">
+              <ul class="slideList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--책소개 이미지-->
+        <section id="infoBook">
+          <img src="img/book_info.jpg">
+        </section>
+        <!--책소개-->
+        <section id="intro">
+          <div id="introBook">
+            <h3 class="title">책 소개</h3>
+            <p>이 책이 속한 분야</p>
+            <ul class="categoryList">
+              <li>국내도서</li>
+              <li>시/에세이</li>
+              <li>나라별 에세이</li>
+              <li>한국에세이</li>
+            </ul>
+          </div>
+          <div id="introAwards">
+            <p>수상내역/미디어추천</p>
+            <ul class="categoryList">
+              <li><span>미디어추천도서</span></li>
+              <li><span>주요일간지소개도서</span></li>
+              <li><span>문화일보</span></li>
+              <li><span>2023년 3월 2주 선정</span></li>
+            </ul>
+            <ul class="categoryList">
+              <li><span>교보문고 추천도서</span></li>
+              <li><span>역대 교보문고 베스트셀러</span></li>
+              <li><span>2021년</span></li>
+              <li><span>2021년 선정</span></li>
+            </ul>
+            <ul class="categoryList">
+              <li><span>교보문고 추천도서</span></li>
+              <li><span>역대 교보문고 베스트셀러</span></li>
+              <li><span>2022년</span></li>
+              <li><span>2022년 선정</span></li>
+            </ul>
+          </div>
+          <div id="introText">
+          </div>
+        </section>
+        <!--작가정보-->
+        <section id="author">
+          <h3 class="title">작가정보</h3>
+          <div id="authorbox">
+            <div class="authorTitle">
+              <div>
+                <span class="author">저자(글)</span>
+                <span class="bold">소윤</span>
+                <i class="fa-regular fa-heart null"></i>
+                <i class="fa-solid fa-heart fill"></i>
+              </div>
+              <span class="gray">
+                <img src="img/icon/info.png">인물정보</span>
+            </div>
+            <div class="authorTag">
+              <span>현대문학가</span>
+              <span><img src="img/icon/category_tap5.png"></span>
+              <span>수필가</span>
+            </div>
+            <div id="authorInfo" class="viewbox hide">
+            </div>
+            <div class="moreView">
+              <button class="showBtn">펼치기</button>
+              <button class="hideBtn">접기</button>
+            </div>
+          </div>
+        </section>
+        <!--목차-->
+        <section id="index">
+          <h3 class="title">목차</h3>
+          <div id="indexText" class="hide"></div>
+          <div class="moreView">
+            <button class="showBtn">펼치기</button>
+            <button class="hideBtn">접기</button>
+          </div>
+        </section>
+        <!--책 속으로-->
+        <section id="inBook">
+          <h3 class="title">책 속에서</h3>
+          <div id="inBookText" class="viewbox hide"></div>
+          <div class="moreView">
+            <button class="showBtn">펼치기</button>
+            <button class="hideBtn">접기</button>
+          </div>
+        </section>
+        <!--출판사 서평-->
+        <section id="publisherWrite">
+          <h3 class="title">출판사 서평</h3>
+          <div id="publisherText" class="viewbox hide"></div>
+          <div class="moreView">
+            <button class="showBtn">펼치기</button>
+            <button class="hideBtn">접기</button>
+          </div>
+        </section>
+        <!--기본 정보-->
+        <section id="defaultInfo">
+          <h3>기본정보</h3>
+          <table>
+            <tr>
+              <th>ISBN</th>
+              <td>9791197037153</td>
+            </tr>
+            <tr>
+              <th>발행(출시)일자</th>
+              <td>2021년 09월 29일 (1쇄 2021년 03월 24일)</td>
+            </tr>
+            <tr>
+              <th>쪽수</th>
+              <td>274쪽</td>
+            </tr>
+            <tr>
+              <th>크기</th>
+              <td>131*191*21mm/374g<a href="#" class="footerBtn">판형알림</a></td>
+            </tr>
+            <tr>
+              <th>총권수</th>
+              <td>1권</td>
+            </tr>
+          </table>
+        </ㄴ>
+        </section>
+        <!--klover 리뷰-->
+        <section id="review">
+          <div class="titlebox">
+            <h3 class="title">Klover 리뷰 (480)</h3>
+            <div>
+              <span>*구매 후 리뷰 작성 시, e교환권 200원 적립</span>
+              <button class="reviewWrite"><img src="img/icon/review_write.png">리뷰 작성</button>
+            </div>
+          </div>
+          <div id="reviewbox">
+            <div class="kloverReview">
+              <div class="boxTop">
+                <p>사용자 총점</p>
+                <div class="boxMid">
+                  <div class="kloverbox">
+                    <div class="kloverbase">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                    </div>
+                    <div class="kloverfill">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                    </div>
+                  </div>
+                  <div class="scorebox">
+                    <span class="score">9.6</span>
+                    <span class="total">/ 10</span>
+                  </div>
+                </div>
+                <div class="boxBottom">
+                  <div class="reviewBar four">
+                    <div class="kloverFour kloverbox">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                    </div>
+                    <div class="persent">
+                      <div class="persentBase"></div>
+                      <div class="persentFill"></div>
+                    </div>
+                    <span>87%</span>
+                  </div>
+                  <div class="reviewBar three">
+                    <div class="kloverFour kloverbox">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score_none.png">
+                    </div>
+                    <div class="persent">
+                      <div class="persentBase"></div>
+                      <div class="persentFill"></div>
+                    </div>
+                    <span>8%</span>
+                  </div>
+                  <div class="reviewBar two">
+                    <div class="kloverFour kloverbox">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                    </div>
+                    <div class="persent">
+                      <div class="persentBase"></div>
+                      <div class="persentFill"></div>
+                    </div>
+                    <span>2%</span>
+                  </div>
+                  <div class="reviewBar one">
+                    <div class="kloverFour kloverbox">
+                      <img src="img/icon/review_score.png">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                      <img src="img/icon/review_score_none.png">
+                    </div>
+                    <div class="persent">
+                      <div class="persentBase"></div>
+                      <div class="persentFill"></div>
+                    </div>
+                    <span>3%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quotesReview">
+              <div class="boxTop">
+                <p>51% 구매자가</p>
+                <p class="quotesText"><span>고마워요</span>라고 응답했어요</p>
+              </div>
+              <div class="boxBottom">
+                <div class="reviewBar five">
+                  <span class="score">51%</span>
+                  <div class="persent">
+                    <div class="persentBase"></div>
+                    <div class="persentFill"></div>
+                  </div>
+                  <span class="message">고마워요</span>
+                </div>
+                <div class="reviewBar four">
+                  <span class="score">27%</span>
+                  <div class="persent">
+                    <div class="persentBase"></div>
+                    <div class="persentFill"></div>
+                  </div>
+                  <span class="message">최고예요</span>
+                </div>
+                <div class="reviewBar three">
+                  <span class="score">8%</span>
+                  <div class="persent">
+                    <div class="persentBase"></div>
+                    <div class="persentFill"></div>
+                  </div>
+                  <span class="message">공감돼요</span>
+                </div>
+                <div class="reviewBar two">
+                  <span class="score">0%</span>
+                  <div class="persent">
+                    <div class="persentBase"></div>
+                    <div class="persentFill"></div>
+                  </div>
+                  <span class="message">재밌어요</span>
+                </div>
+                <div class="reviewBar one">
+                  <span class="score">14%</span>
+                  <div class="persent">
+                    <div class="persentBase"></div>
+                    <div class="persentFill"></div>
+                  </div>
+                  <span class="message">힐링돼요</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--전체 리뷰 -->
+        <section id="allReview">
+          <div id="allReviewTab">
+            <ul class="tab">
+              <li class="click">전체 리뷰</li>
+              <li>구매 리뷰</li>
+              <li>한 달 후 리뷰</li>
+            </ul>
+            <form>
+              <select>
+                <option value = "like">좋아요 순</option>
+                <option value = "like">최신순</option>
+              </select>
+            </form>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">dl*******</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.05</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              친구에게 선물할려고 샀는데 다시 사서 줘야겠어요~^^소장용이네요...가슴이 따뜻해집니다
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">36</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">so********</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.16</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              편하게 읽었어요
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">31</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">wn******</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.30</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>최고예요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              공감되고 위로가 되는 글들이 많아 힐링이 되네요^^
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">29</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">po******</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.05</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              자기에 대해 돌아보게 해주는 책입니다.
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">28</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">kh*******</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.05.18</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              잘 읽히는 책입니다. 위로와 사랑이 가득해서 마음이 따듯해집니다. 기댈대 없이 외로울때 읽으면 많은 도움이 될것 같아요.
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">24</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">to*****</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.11</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>공감돼요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              내용도 유익하고 재미있게 봤습니다
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">23</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">kh****</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.10</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              마음에 와 닿는 부분들이 많아 자주 읽을 것 같고 선물하기도 좋은 책 같아요 너무 만족해요
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">23</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">ld****</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.03.30</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              코로나로 인해 지친 마음을 위로해주는 책입니나. 주변에 추천해드리고 싶네요~^^
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">20</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">tn********</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.12</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>공감돼요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              짧지만 여운이 남는책인거 같아요 선물용으로 괜찮을거 같습니다
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">18</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewbox">
+            <div class="reviewTop">
+              <div class="userInfo">
+                <div>
+                  <span class="paper">종이책</span>
+                  <span class="buyer">구매자</span>
+                  <span class="userId">hj********</span>
+                </div>
+                <div>
+                  <span class="writeDate">2021.04.13</span>
+                </div>
+                <div>
+                  <span class="block">신고/차단</span>
+                </div>
+              </div>
+              <div class="scorebox">
+                <div class="persent">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                  <img src="img/icon/review_score.png">
+                </div>
+                <div class="quotes">
+                  <img src="img/icon/quotes.png">
+                  <span>고마워요</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviewComment">
+              글귀 마다 가슴에 스며드는 좋은 기운이 늘 책을 곁에 두고 싶게 한다.
+            </div>
+            <div class="reviewBottom">
+              <span class="like"><img src="img/icon/like.png">15</span>
+              <span class="reply"><img src="img/icon/reply.png">답글 0</span>
+            </div>
+          </div>
+          <div class="reviewBtn">
+            <button class="leftBtn"><img src="img/icon/category_down.png"></button>
+            <div>
+              <span class="now">1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span class="ellipsis">...</span>
+              <span>9</span>
+            </div>
+            <button class="rightBtn"><img src="img/icon/category_down.png"></button>
+          </div>
+        </section>  
+      </section>
+      <section class="rightContents">
+        <section id="find">
+          <h3 class="title">기분 좋은 발견</h3>
+          <div id="findSlide" class="scrollbar">
+            <ul>
+              <li><img src="img/find1.jpg"></li>
+              <li><img src="img/find2.jpg"></li>
+              <li><img src="img/find3.jpg"></li>
+              <li><img src="img/find4.jpg"></li>
+            </ul>
+          </div>
+        </section>
+        <section id="bestRank">
+          <div class="titlebox">
+            <h3 class="title">이 분야의 베스트</h3>
+            <span class="morebook"><a href="#">더보기</a></span>
+          </div>
+          <div id="bestBook">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section>
+        <section id="rightBanner1">
+          <img src="img/right_banner.png">
+        </section>
+        <section id="newRank">
+          <div class="titlebox">
+            <h3 class="title">이 분야의 신간</h3>
+            <span class="morebook"><a href="#">더보기</a></span>
+          </div>
+          <div id="newBook">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </div>
+    <!--떠다니는 광고창-->
+    <div id="flyingMenu" class="sub">
+      <div id="flyingMenuWrap">
+        <a href="#" class="imgwrap"><img src="img/flying.jpg" alt="flyingMenu"></a>
+        <div id="flyingEvent">
+          <a href="#" class="menu">이벤트</a>
+          <div id="flyingBanner">
+            <ul id="flyingBannerList">
+              <li class="list"><img src='img/flying_banner1.jpg'></li>
+              <li class="list"><img src='img/flying_banner2.jpg'></li>
+              <li class="list"><img src='img/flying_banner3.jpg'></li>
+              <li class="list"><img src='img/flying_banner4.jpg'></li>
+              <li class="list"><img src='img/flying_banner5.jpg'></li>
+            </ul>
+          </div>
+          <div class="btnbox">
+            <button class="leftBtn"><img src="img/icon/right_button_thin.png"></button>
+            <div class="index">
+              <span class="now">0</span>
+              <span> - </span>
+              <span class="total">0</span>
+            </div>
+            <button class="rightBtn"><img src="img/icon/right_button_thin.png"></button>
+          </div>
+        </div>
+        <a href="#" class="menu coupon">쿠폰/혜택</a>
+      </div>
+    </div>
+    <div id="topBtn"><span>TOP</span></div>
+  </main>
+  <footer>
+    <div id="footerTop">
+      <div id="footerTopWrap">
+        <div class="notice">
+          <span class="title">공지사항</span>
+          <a href="#" class="link">북앤라이프 문화상품권 결제서비스 일시 중단 안내 (9/21~)</a>
+          <a href="#" class="link2"><span class="plus">더보기</span></a>
+        </div>
+        <div class="notice">
+          <span class="title">당첨자발표</span>
+          <a href="#" class="link">[로맨스][독점] 9월 일랑 로맨스 브랜드관 당첨자 발표</a>
+          <a href="#" class="link2"><span class="plus">더보기</span></a>
+        </div>
+      </div>
+    </div>
+    <div id="footerMid">
+      <div id="footerMidWrap">
+        <div class="fInnerBox">
+          <span class="title btn">회원혜택</span>
+          <ul>
+            <li>Prestige Lounge</li>
+            <li>신규회원 혜택</li>
+            <li>등급별 혜택</li>
+            <li>출석체크</li>
+          </ul>
+        </div>
+        <div class="fInnerBox">
+          <span class="title">쇼핑TIP</span>
+          <ul>
+            <li>제휴포인트/상품권</li>
+            <li>교보문고 기프트카트</li>
+            <li>대량구매</li>
+            <li>리딩트리서비스(독서경영)</li>
+          </ul>
+        </div>
+        <div class="fInnerBox">
+          <span class="title">빠른 서비스</span>
+          <ul>
+            <li>북클럽카드 등록</li>
+            <li>영수증 후 적립</li>
+            <li>교보캐시 조회·충전</li>
+            <li>교보e캐시 조회·충전</li>
+            <li>기프트카드 조회·충전</li>
+            <li>협력사 여러분</li>
+          </ul>
+        </div>
+        <div class="fInnerBox">
+          <span class="title">교보문고 소식</span>
+          <ul>
+            <li>인스타그램(교보문고)</li>
+            <li>인스타그램(인터넷교보문고)</li>
+            <li>페이스북(교보문고)</li>
+            <li>페이스북(인터넷교보문고)</li>
+            <li>트위터</li>
+            <li>유튜브</li>
+          </ul>
+        </div>
+        <div class="fInnerBox">
+          <span class="title btn">FAQ</span>
+          <ul>
+            <li>주문·결제</li>
+            <li>eBook</li>
+            <li>도서·상품정보</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footerBottom">
+      <div id="footerBottomWrap">
+        <div id="footerBox1">
+          <div class="logobox2">
+            <a href="#"><img src="img/logo2.png"></a>
+          </div>
+          <div id="familyShare">
+            <div id="family">
+              <span>Family Site</span>
+              <ul id="familyList">
+                <li>교보생명</li>
+                <li>교보증권</li>
+                <li>교보정보통신</li>
+                <li>교보리얼코</li>
+                <li>교보약사자산운용</li>
+                <li>교보라이프플래닛생명</li>
+                <li>KCA 손해사정</li>
+                <li>KCA 서비스</li>
+                <li>교보자산신탁주식회사</li>
+                <li>대산문화재단</li>
+                <li>교보교육재단</li>
+                <li>대산농촌재단</li>
+                <li>교보아카데미</li>
+              </ul>
+            </div>
+            <div id="share">
+              <a href="#"><img src="img/icon/youtube.png"></a>
+              <a href="#"><img src="img/icon/facebook.png"></a>
+              <a href="#"><img src="img/icon/instagram.png"></a>
+            </div>
+          </div>
+        </div>
+        <div id="footerBox2">
+          <div class="contentLeft">
+            <div class="menubox">
+              <ul>
+                <li>회사소개</li>
+                <li>이용약관</li>
+                <li class="bold">개인정보처리방침</li>
+                <li>청소년보호정책</li>
+                <li>대량주문안내</li>
+                <li>협력사여러분</li>
+                <li>채용정보</li>
+                <li>광고소개</li>
+              </ul>
+            </div>
+            <div class="infobox">
+              <div>
+                <span>대표이사:안병현, 김상훈</span>
+                <span>서울특별시 종로구 종로 1</span>
+                <span>사업자 등록번호:102-81-11670</span>
+              </div>
+              <div>
+                <span class="bold">대표전화:1544-1900(발신자 부담전화)</span>
+                <span>FAX:0502-987-5711(지역번호 공통)</span>
+                <span>서울특별시 통신판매업신고번호 : 제 653호
+                  <a href="#" class="footerBtn">사업자정보확인</a>
+                </span>
+              </div>
+            </div>
+            <div class="copybox">
+              <span>© KYOBO BOOK CENTRE</span>
+            </div>
+          </div>
+          <div class="contentRight">
+            <div class="service">
+              <span>토스페이먼츠 구매안전서비스</span>
+              <a href="#" class="footerBtn">서비스 가입 확인</a>
+              <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br>토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+            </div>
+            <div class="mark">
+              <a href="#">정보보호관리체계<br>ISMS 인증획득</a>
+              <span>[인증범위]온라인교보문고 서비스 운영<br>[유효기간]2020.11.04 ~ 2023.11.03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!--결제 정보-->
+  <div id="purchaseInfo">
+        <div id="purchaseInfoWrap">
+          <div class="leftContents">
+            <span class="title">총 상품 금액</span>
+            <span class="total">13,500</span>
+            <span class="won">원</span>
+          </div>
+          <div class="rightContents">
+            <div class="count">
+              <button class="leftBtn">-</button>
+              <input type="number" value="1" title="totalCount" id="inputNum" onKeyup="this.value=this.value.replace(/[^0-9]/g,'1');">
+              <button class="rightBtn">+</button>
+            </div>
+            <div class="btnbox">
+              <button class="wish"><i class="fa-regular fa-heart null"></i></button>
+              <button class="gift"><img src="img/icon/gift.png">선물하기</button>
+              <button class="basket">장바구니</button>
+              <div class="directBuy">
+                <button class="direct">바로드림</button>
+                <button class="buy">바로구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</body>
+
+</html>
