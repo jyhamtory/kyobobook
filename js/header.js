@@ -1,7 +1,7 @@
 
 $(function () {
     //li의 자식태그로 a 태그 추가 및 삭제 
-    $("ul>li").wrapInner("<a href='#'></a>");
+    $("ul>li").wrapInner("<a href='sub.html'></a>");
     $("#imgBar .sub").unwrap(); 
     $("#serviceSub").unwrap(); 
     $("#bannerControl").find("span").unwrap();
