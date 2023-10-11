@@ -1,22 +1,22 @@
 $(function(){
   /*책 소개*/
-  $.get("../txt/introText.txt", function(data){
+  $.get("../text/introText.txt", function(data){
     $("#introText").html(data);
   });
 
-  $.get("../txt/authorInfo.txt", function(data){
+  $.get("../text/authorInfo.txt", function(data){
     $("#authorInfo").html(data);
   });
 
-  $.get("../txt/index.txt", function(data){
+  $.get("../text/index.txt", function(data){
     $("#indexText").html(data);
   });
   
-  $.get("../txt/inBook.txt", function(data){
+  $.get("../text/inBook.txt", function(data){
     $("#inBookText").html(data);
   })
 
-  $.get("../txt/publisherWrite.txt", function(data){
+  $.get("../text/publisherWrite.txt", function(data){
     $("#publisherText").html(data);
   })
 
