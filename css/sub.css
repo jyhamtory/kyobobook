@@ -2121,6 +2121,10 @@
   right:10px;
 }
 
+#flyingMenu .leftBtn, #flyingMenu .rightBtn{
+  cursor:pointer;
+}
+
 footer{
   padding-bottom: 50px;
 }

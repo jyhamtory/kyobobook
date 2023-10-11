@@ -526,6 +526,7 @@ nav.changed{
   top:87px;
   overflow:hidden;
   box-sizing: border-box;
+  display:none;
 }
 
 #navSubBox.changed{

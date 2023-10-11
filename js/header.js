@@ -63,7 +63,7 @@ $(function () {
   $("#navTab li a:first").css({ "color": "#000", "font-weight": "600", "border-bottom": "2px solid #000", "padding-bottom": "14px" });
   $(".innerMenu").siblings().hide();
   $(".show").show();
-  $("#navSubBox").hide();
+
 
 
   //네비게이션 toggle
