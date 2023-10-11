@@ -78,7 +78,7 @@ $(function () {
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book",
     headers: { Authorization: "KakaoAK c72c7e6a56fdb9c8c2e3dae655e0d4e8" },
-    data: { query: "밤" }
+    data: { query: "작은 별" }
   })
     .done(function (msg) {
       $("#todayBox1 li").each(function (i) {
