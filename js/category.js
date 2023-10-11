@@ -1,7 +1,5 @@
 $(function(){
-  $(".categoryBox").hide();
-  
-  $(".list").hover(function(){
+  $("#category .list").hover(function(){
     $(this).find("p").addClass("bold").stop();
     $(this).find(".categoryBox").stop().fadeIn(150);
   }, function(){

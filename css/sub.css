@@ -77,6 +77,11 @@
 }
 
 .categoryBox {
+  display:none;
+  z-index: 10;
+}
+
+.categoryBoxWrap{
   min-width: 173px;
   width:173px;
   background-color:#fff;
@@ -86,30 +91,33 @@
   padding:15px 15px 15px 0px;
   border-radius: 10px;
   border:1px solid #d5d5d5;
-  z-index: 30;
+  z-index: 10;
 }
 
-.categoryBox.large{
+.categoryBoxWrap.large{
   width: 470px;
   display:flex;
 }
 
-.categoryBox.large ul{
+.categoryBoxWrap.large ul{
   margin-right: 30px;
   position: relative;
+  z-index: 10;
 }
 
-.categoryBox.large ul::after{
+.categoryBoxWrap.large ul::after{
   content:"";
   width:1px;
   height:240px;
   background-color: #eaeaea;
   position:absolute;
   top:0%;
+  z-index: 10;
 }
 
 .categoryBox li{
   margin:6px 20px;
+  z-index: 10;
 }
 
 .categoryBox a{
@@ -117,11 +125,13 @@
   line-height:19px;
   color:#767676;
   text-decoration: none;
+  z-index: 10;
 }
 
 .categoryBox .this a{
   color:#000;
   font-weight: 600;
+  z-index: 10;
 }
 
 /*책 디테일*/
@@ -176,6 +186,7 @@
   position:absolute;
   top:0;
   left:0;
+  z-index: -1;
 }
 
 /*인덱스 & 버튼*/
