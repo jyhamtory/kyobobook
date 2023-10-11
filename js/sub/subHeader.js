@@ -165,10 +165,10 @@ $(function () {
     let winScroll = $(window).scrollTop();
     let winWidth = $(window).innerWidth();
     let height = $("header").outerHeight();
-    let height2 = $("#sectionWrap").offset().top - 80
-    let bookcard = $("#bookcard").offset();
-    let infobook = $("#infoBook img").offset();
-    let review = $("#review").offset();
+    let height2 = $("#sectionWrap").offset().top - 80;
+    let bookcard = $("#bookcard").offset().top - 140;
+    let infobook = $("#infoBook img").offset().top -140;
+    let review = $("#review").offset().top - 140;
 
     if(winWidth > 1023){
       if(height < winScroll){
@@ -210,18 +210,18 @@ $(function () {
       if(height2 <= winScroll){
         $("#innerTab").addClass("fixed");
         $("#bookcard").addClass("fixed");
-        if(winScroll < bookcard.top){
+        if(winScroll < bookcard){
           $("#innerTab li a").removeClass("changed");
         }
-        if(winScroll > bookcard.top){
+        if(winScroll > bookcard){
           $("#innerTab li a").removeClass("changed");
           $("#innerTab a").eq(0).addClass("changed");
         }
-        if(winScroll > infobook.top){
+        if(winScroll > infobook){
           $("#innerTab li a").removeClass("changed");
           $("#innerTab a").eq(1).addClass("changed");
         }
-        if(winScroll > review.top){
+        if(winScroll > review){
           $("#innerTab li a").removeClass("changed");
           $("#innerTab a").eq(2).addClass("changed");
         }
@@ -229,6 +229,20 @@ $(function () {
         $("#innerTab").removeClass("fixed");
         $("#bookcard").removeClass("fixed");
       }
+    }
+  })
+
+  $("#innerTab li").click(function(){
+    let event = $("#bookcard").offset().top -130
+    let info = $("#infoBook").offset().top -130
+    let review = $("#review").offset().top -130
+
+    if($(this).index() === 0){
+      $("html").animate({scrollTop:event}, 400);
+    }else if($(this).index() === 1){
+      $("html").animate({scrollTop:info}, 400);
+    }else if($(this).index() === 2){
+      $("html").animate({scrollTop:review}, 400);
     }
   })
 });
